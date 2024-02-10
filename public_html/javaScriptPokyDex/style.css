@@ -1,0 +1,374 @@
+#pokemonShop {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    width: 95%;
+    padding: 5px;
+    margin: auto;
+  }
+  
+  /* Pagination */
+  
+  .buttonPagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .pokemonMeasurement {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+  }
+  
+  .modalPagination {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+  }
+  
+  .paginationContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  
+  #prevPage,
+  #nextPage,
+  #currentPage {
+    background-color: lightcoral;
+  }
+  
+  #inputSearch {
+    width: 250%;
+  }
+  
+  #choosePage {
+    text-align: center;
+  }
+  
+  /* Modal */
+  
+  .name {
+    text-transform: capitalize;
+    font-size: 1rem;
+  }
+  
+  .product-container {
+    display: flex;
+    flex-direction: column;
+    width: calc(20% - 5px);
+    justify-content: space-evenly;
+    text-align: center;
+  }
+  
+  .spriteModal {
+    background-image: url("/img/background.png");
+    background-repeat: no-repeat;
+    border: solid black 1px;
+    width: 95%;
+  }
+  
+  .sprite:hover {
+    margin: auto;
+    width: 100%;
+    background-image: url("/img/back-ball.png");
+    background-repeat: no-repeat;
+  }
+  
+  .modal-content {
+    border-radius: 10px;
+    border: solid black 4px;
+    box-shadow: 1px 1px 25px skyblue;
+  }
+  
+  /* Button */
+  
+  .button {
+    border-radius: 4px;
+    background-color: #5ca1e1;
+    border: none;
+    color: #fff;
+    text-align: center;
+    font-size: 1rem;
+    padding: 8px;
+    width: 95%;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    box-shadow: 0 10px 20px -8px rgba(0, 0, 0, 0.7);
+  }
+  
+  .button {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button:after {
+    position: absolute;
+    opacity: 0;
+    top: 14px;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover {
+    font-weight: bolder;
+    box-shadow: 1px 5px 20px black;
+    background-color: lightcoral;
+    color: black;
+  }
+  
+  .button:hover:after {
+    opacity: 1;
+    right: 10px;
+  }
+  
+  /* Fotter */
+  
+  .footerStyle {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  
+  .creator {
+    margin-top: 100px;
+  }
+  
+  .creator,
+  .fotterLinks {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-size: 2rem;
+    text-shadow: 2px 2px orange;
+    color: darkred;
+    text-align: center;
+  }
+  
+  .fotterLink {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: darkblue;
+    font-weight: bolder;
+  }
+  
+  /* Nav */
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    margin: auto;
+  }
+  
+  span {
+    margin-left: 20px;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+  
+    background-color: #f9f9f9;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    padding: 12px 12px;
+    z-index: 1;
+    border-radius: 5px;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  /* Contact Us */
+  
+  .content {
+    justify-self: center;
+    width: 90%;
+    grid-row: 2 / 3;
+    grid-column: 1 / 5;
+    margin: auto;
+  }
+  .contact {
+    padding: 4%;
+    height: 100%;
+  }
+  .col-md-3 {
+    background: #5ca1e1;
+  }
+  .contact-info {
+    margin-top: 10%;
+  }
+  .contact-info img {
+    margin-bottom: 15%;
+  }
+  .contact-info h2 {
+    margin-bottom: 10%;
+  }
+  .col-md-9 {
+    background: rgb(255, 255, 255);
+    padding: 3%;
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+  }
+  .contact-form label {
+    font-weight: 600;
+  }
+  .contact-form .btn {
+    color: #fff;
+    font-weight: 600;
+    width: 50%;
+    transition: 0.5s;
+    border: solid 0.1px black;
+    margin-top: 5px;
+    background-color: #5ca1e1;
+  }
+  .contact-form .btn:focus {
+    box-shadow: none;
+  }
+  
+  .btn:hover {
+    background: lightcoral;
+    color: black;
+    border: solid black 2px;
+    box-shadow: 0 10px 20px -8px rgba(0, 0, 0, 0.7);
+  }
+  
+  .contact-logo {
+    text-align: center;
+  }
+  
+  label {
+    color: black;
+    display: grid;
+  }
+  
+  .form-control {
+    color: #25274d;
+  }
+  
+  /* media */
+  
+  @media (max-width: 480px) {
+    .product-container {
+      width: calc(50% - 5px);
+    }
+  
+    .name {
+      font-size: 1.5rem;
+    }
+  
+    #prevPage,
+    #nextPage,
+    #currentPage {
+      width: 90px;
+    }
+  
+    #choosePage {
+      width: 60%;
+      margin-top: 15px;
+    }
+  
+    #contact-dropdown {
+      width: 240%;
+    }
+  }
+  
+  @media (min-width: 481px) {
+    .product-container {
+      width: calc(50% - 5px);
+    }
+    .name {
+      font-size: 1.5rem;
+    }
+  
+    #prevPage,
+    #nextPage,
+    #currentPage {
+      width: 120px;
+    }
+  
+    #choosePage {
+      width: 40%;
+    }
+  
+    #contact-dropdown {
+      width: 300%;
+    }
+  }
+  
+  @media (min-width: 624px) {
+    .product-container {
+      width: calc(33% - 5px);
+    }
+  
+    #prevPage,
+    #nextPage,
+    #currentPage {
+      width: 100px;
+    }
+  
+    #numberSearch {
+      width: 35%;
+    }
+  }
+  
+  @media (min-width: 769px) {
+    .product-container {
+      width: calc(33% - 5px);
+    }
+  
+    #prevPage,
+    #nextPage,
+    #currentPage {
+      width: 110px;
+    }
+  
+    #choosePage {
+      width: 30%;
+    }
+  
+    #contact-dropdown {
+      width: 400%;
+    }
+  }
+  
+  @media (min-width: 1025px) {
+    .product-container {
+      width: calc(25% - 5px);
+    }
+  
+    #prevPage,
+    #nextPage,
+    #currentPage {
+      width: 100px;
+    }
+  
+    #choosePage {
+      width: 25%;
+    }
+  }
+  
+  @media (min-width: 1201px) {
+    .product-container {
+      width: calc(16% - 5px);
+    }
+  
+    #prevPage,
+    #nextPage,
+    #currentPage {
+      width: 100px;
+    }
+  
+    #choosePage {
+      width: 15%;
+    }
+  }
