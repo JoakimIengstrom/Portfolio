@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF=8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Whack-a-mole</title>
+  </head>
+
+  <body>
+    <div class="screenWrapper">
+      <h2>Sonic Whack-a-mole</h2>
+      <div class="score">0</div>
+      <div class="highScore"></div>
+      <div class="countdown"></div>
+
+      <div class="gameWrapper">
+        <button class="startButton">Start</button>
+
+        <div class="game">
+          <div id="hole1" class="hole">
+            <div id="m1" class="mole small"></div>
+          </div>
+          <div id="hole2" class="hole">
+            <div id="m2" class="mole small"></div>
+          </div>
+          <div id="hole3" class="hole">
+            <div id="m3" class="mole small"></div>
+          </div>
+          <div id="hole4" class="hole">
+            <div id="m4" class="mole large"></div>
+          </div>
+          <div id="hole5" class="hole">
+            <div id="m5" class="mole large"></div>
+          </div>
+          <div id="hole6" class="hole">
+            <div id="m6" class="mole large"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js" type="module"></script>
+  </body>
+</html>
